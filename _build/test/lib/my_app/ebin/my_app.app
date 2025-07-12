@@ -1,0 +1,9 @@
+{application,my_app,
+             [{modules,['Elixir.MyApp.Game.Card','Elixir.MyApp.Game.Deck',
+                        'Elixir.MyApp.Game.Game','Elixir.MyApp.Game.Player',
+                        'Elixir.MyApp.Game.Rules']},
+              {optional_applications,[]},
+              {applications,[kernel,stdlib,elixir,logger]},
+              {description,"my_app"},
+              {registered,[]},
+              {vsn,"0.1.0"}]}.
