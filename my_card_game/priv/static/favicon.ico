@@ -1,0 +1,4 @@
+# This is a dummy file. A real favicon.ico is a binary image file.
+# For simulation, a text file is sufficient to represent its presence.
+# In a real project, you would replace this with an actual .ico file.
+[favicon.ico placeholder]

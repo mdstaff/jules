@@ -1,0 +1,38 @@
+# Elixir build artifacts
+/_build/
+/deps/
+erl_crash.dump
+*.ez
+
+# Phoenix specific
+# /priv/static/ is often gitignored if assets are built during deployment.
+# However, if you check in built assets, then don't ignore it.
+# For this simulation, let's assume we might check them in for simplicity,
+# or that the build pipeline handles it.
+# /priv/static/assets/
+# /priv/static/cache_manifest.json
+
+# Config files with secrets
+/config/*.secret.exs
+/config/prod.secret.exs
+/config/dev.secret.exs
+/config/test.secret.exs
+
+# Other
+.elixir_ls/
+.idea/
+.vscode/
+*.DS_Store
+
+# Uploads directory (if you have one)
+# /priv/static/uploads/
+
+# Logs
+/logs/
+*.log
+
+# NPM / Node dependencies (if frontend build tools are used locally)
+# /assets/node_modules/
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*

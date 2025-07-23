@@ -1,0 +1,101 @@
+/* This file is for your main application CSS. */
+/* If you are using Tailwind, this is where you'd import it. */
+
+/* Basic body styling for demonstration */
+body {
+  font-family: sans-serif;
+  margin: 0; /* Standard reset */
+  padding: 0; /* Standard reset */
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Light grey background */
+  color: #333; /* Default text color */
+}
+
+/* Mimicking container class often used */
+.container {
+  max-width: 960px;
+  margin: 20px auto; /* Centered with some margin */
+  padding: 20px;
+  background-color: #fff; /* White background for content area */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Styles for flash messages (from CoreComponents example) */
+/* These are basic, a real app might use utility classes from Tailwind/Bootstrap */
+.flash-group { /* This is the outer container from flash_group component */
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  width: 320px; /* Example width */
+}
+
+.flash {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.375rem; /* Tailwind's rounded-lg */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Tailwind shadow-lg */
+}
+
+.flash button {
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Example flash kinds */
+.flash[id^="flash-info"] {
+  background-color: #3B82F6; /* Tailwind's bg-blue-500 */
+}
+
+.flash[id^="flash-error"] {
+  background-color: #EF4444; /* Tailwind's bg-red-500 */
+}
+
+.flash[id^="flash-success"] {
+  background-color: #10B981; /* Tailwind's bg-green-500 */
+}
+
+.flash[id^="flash-warning"] {
+  background-color: #F59E0B; /* Tailwind's bg-yellow-500 */
+  color: #1F2937; /* Darker text for yellow background */
+}
+
+/* Basic button styling */
+button, .button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button.primary, .button.primary {
+  background-color: #3B82F6; /* blue-500 */
+  color: white;
+}
+button.primary:hover, .button.primary:hover {
+  background-color: #2563EB; /* blue-600 */
+}
